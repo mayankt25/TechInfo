@@ -1,0 +1,38 @@
+<%- include("partials/header"); -%>
+
+<h1>Contact</h1>
+<p> <%= contentContact %> </p>
+
+<div class="row">
+
+  <div class="col-md-9 mb-md-0 mb-5">
+
+      <div class="row">
+
+        <div class="col-md-6">
+          <div class="md-form mb-0">
+            <input type="text" id="name" name="name" class="form-control" placeholder="Your name" autocomplete="off">
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="md-form mb-0">
+            <input type="email" id="email" name="email" class="form-control" placeholder="Your email" autocomplete="off">
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="md-form">
+            <textarea type="text" id="message" name="body" rows="2" class="form-control md-textarea" placeholder="Your message" autocomplete="off"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <button type="submit" name="button" class="btn btn-primary" onclick="sendMail()">Submit</button>
+  </div>
+</div>
+
+<%- include("partials/footer"); -%>
