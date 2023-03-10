@@ -15,7 +15,7 @@ app.set('view engine', 'ejs');
 
 mongoose.set("strictQuery", false);
 
-mongoose.connect(process.env.DATABASE_URL);
+mongoose.connect(process.env.DATABASE_URL2);
 
 const postSchema = {
   title: String,
