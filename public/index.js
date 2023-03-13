@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 function sendMail() {
   var params = {
     name: document.getElementById("name").value,
